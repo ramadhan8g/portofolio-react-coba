@@ -8,6 +8,8 @@
 .contact__options{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1.2rem;
 }
 
@@ -44,16 +46,24 @@ form{
     flex-direction: column;
     gap: 1.2rem;
 }
+form input{
+    color: black;
+}
+
+form textarea{
+    color: black;
+}
 
 input,
 textarea{
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: transparent;
+    /* background: transparent; */
+    background-color: rgb(240, 249, 249);
     border: 2px solid var(--color-primary-variant);
     resize:none;
-    color: var(--color-white);
+    color: black;
 }
 
 

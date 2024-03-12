@@ -20,6 +20,9 @@
 .portofolio__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
 }
 
 .portofolio__item h3{
@@ -30,6 +33,11 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.portofolio_button {
+    display: flex;
+    gap: 2rem;
 }
 
 /* MEDIA QUERIES MEDIUM QUERIES (TABLET) */

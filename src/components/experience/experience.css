@@ -1,7 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .experience__container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 2rem;
+    width: full;
 }
 
 .experience__container> div{
@@ -26,13 +32,35 @@
 
 .experience__content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    margin: 0 2rem;
+    gap: 2rem;
+ 
+}
+
+.experience_myskill{
+  background-color: var(--color-bg-variant);
+  display: flex;
+  width: 20rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.experience__icon{
+ font-weight: 500;
+font-size: xx-large;
+  align-items: center;
 }
 
 .experience__details{
     display: flex;
     gap: 1rem;
+    flex-direction: column;
+    width: 100%;
 }
 
 .experience__details-icon{
@@ -62,9 +90,28 @@
         gap: 1rem;
       }
       .experience__container>div{
-        width: 100%;
-        padding: 2rem 1rem;
-        margin: 0 auto;
+        width: 94vw;
+        padding: 1rem 1rem;
+        margin: 0 -2.2rem;
+
+      }
+      .experience_myskill{
+        width: 11rem;
+        margin: 0 -3rem;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      .about__card{
+        width: 11rem;
+        margin: 0 -3rem;
+        gap: 5rem;
+
+        background-color: black;
+      }
+      .experience__content{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin: 0 -1rem;
       }
     
       
